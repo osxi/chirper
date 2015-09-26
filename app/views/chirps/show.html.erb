@@ -3,3 +3,7 @@
 <p>
 - <i><%= @chirp.author %></i>
 </p>
+
+<%= link_to "Edit this Chirp", edit_chirp_path(@chirp) %>
+<br />
+<%= link_to "Delete this Chirp", chirp_path(@chirp), method: 'delete' %>
