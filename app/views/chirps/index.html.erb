@@ -1,0 +1,10 @@
+<%= link_to "Make a new chirp", new_chirp_path %>
+<hr>
+
+<% @chirps.each do |chirp| %>
+  <p><%= chirp.body %></p>
+  <p>
+    - <i><%= chirp.author %></i>
+    <%= link_to "Read more", chirp_path(chirp) %>
+  </p>
+<% end -%>
